@@ -1,7 +1,21 @@
-import React from 'react'
+// CardList.jsx
 
-export default function cardList() {
+import React from 'react';
+import Card from './card';
+
+const CardList = ({ songs }) => {
   return (
-    <div>cardList</div>
-  )
-}
+    <div className="card-list">
+      {songs.map((song) => (
+        <Card
+          key={song.id}
+          title={song.title}
+          artist={song.artist}
+          lyrics={song.lyrics}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default CardList;

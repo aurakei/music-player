@@ -1,39 +1,32 @@
 import React, { useState } from "react";
 import axios from "axios";
-
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = async () => {
+    const axios = require("axios");
+
     const options = {
       method: "GET",
       url: "https://genius-song-lyrics1.p.rapidapi.com/search/",
       params: {
-        q: query,
+        q: "<REQUIRED>",
         per_page: "10",
         page: "1",
       },
       headers: {
-        "X-RapidAPI-Key": "",
-        "X-RapidAPI-Host": "",
+        "X-RapidAPI-Key": "f3d509248emsh229f7737fd62c60p17b4d1jsneeecb5fed8ae",
+        "X-RapidAPI-Host": "genius-song-lyrics1.p.rapidapi.com",
       },
     };
 
     try {
+      //make the API request using axios
       const response = await axios.request(options);
-      const { hits } = response.data.response;
-
-      // Map the relevant data and pass it back to the parent component
-      const searchResults = hits.map((hit) => ({
-        id: hit.result.id,
-        title: hit.result.title,
-        artist: hit.result.primary_artist.name,
-        lyrics: "Lyrics not available", // You might need to fetch lyrics separately
-      }));
-
-      onSearch(searchResults);
+      console.log(response)
+      console.log(response.data);
     } catch (error) {
-      console.error("Error fetching songs:", error);
+      console.error(error);
     }
   };
 
