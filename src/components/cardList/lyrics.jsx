@@ -1,19 +1,19 @@
-// LyricsCard.js
+// LyricsCard.jsx
 
 import React from 'react';
 
 const LyricsCard = () => {
   return (
-    <div className="flex items-center justify-end h-screen-80 bg-gray-200 p-8">
-      <div className="max-w-md">
-        {/* Title */}
-        <h2 className="text-3xl font-bold mb-4">Song Title</h2>
-        {/* Lyrics */}
-        <p className="text-gray-700">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          ultricies tincidunt ex, non elementum purus efficitur vel. ...
-        </p>
-      </div>
+    <div className="LyricsCard w-22 h-60 bg-lightblue p-4">
+      {/* Title */}
+      <h2 className="text-xl font-bold mb-2">Song Title</h2>
+
+      {/* Lyrics (Dummy Text) */}
+      <p className="text-gray-800">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+        ultricies tincidunt ex, non elementum purus efficitur vel. Vestibulum
+        ultricies luctus leo, at tincidunt velit tempor non.
+      </p>
     </div>
   );
 };
