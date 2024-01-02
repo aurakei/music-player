@@ -5,9 +5,9 @@ import React from "react";
 const NowPlayingCard = () => {
   return (
     //div that takes 80% of the screen with tailwind
-    <div>
-      <div class="bg-white border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8">
-        <div class="flex items-center space-x-4">
+    <div className="w-1/2">
+      <div className="bg-white border-slate-100 dark:bg-slate-800 dark:border-slate-500 border-b rounded-t-xl p-4 pb-6 sm:p-10 sm:pb-8 lg:p-6 xl:p-10 xl:pb-8 space-y-6 sm:space-y-8 lg:space-y-6 xl:space-y-8">
+        <div className="flex items-center space-x-4">
           <img
             src="/full-stack-radio.png"
             alt=""
@@ -50,7 +50,7 @@ const NowPlayingCard = () => {
           </div>
         </div>
       </div>
-      <div class="bg-slate-50 text-slate-500 dark:bg-slate-600 dark:text-slate-200 rounded-b-xl flex items-center">
+      <div className="bg-slate-50 text-slate-500 dark:bg-slate-600 dark:text-slate-200 rounded-b-xl flex items-center">
         <div class="flex-auto flex items-center justify-evenly">
           <button type="button" aria-label="Add to favorites">
             <svg width="24" height="24">

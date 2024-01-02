@@ -4,7 +4,7 @@ import React from 'react';
 
 const LyricsCard = () => {
   return (
-    <div className="LyricsCard w-22 h-60 bg-lightblue p-4">
+    <div className="LyricsCard w-1/4 p-4 border border-gray-300 rounded-lg">
       {/* Title */}
       <h2 className="text-xl font-bold mb-2">Song Title</h2>
 
