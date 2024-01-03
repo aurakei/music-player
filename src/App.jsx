@@ -1,11 +1,9 @@
-// App.jsx
-
 import React from 'react';
 import TitleComponent from './components/title/title';
 import LeftBar from './components/leftbar/leftbar';
-// import CardList from './components/cardList/cardList';
 import NowPlayingCard from './components/cardList/nowPlayingCard';
 import LyricsCard from './components/cardList/lyrics';
+import backgroundImage from './images/wallbackground.jpg';
 
 const App = () => {
   const songs = [
@@ -25,23 +23,27 @@ const App = () => {
   ];
 
   return (
-    <div className="flex flex-col h-screen">
-  {/* Title Component */}
-  <TitleComponent title="Musician" className="w-full" />
+    <div
+      className="flex flex-col h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover', // Ensure the background image covers the entire screen
+      }}
+    >
+      {/* Title Component */}
+      <TitleComponent title="Musician" className="w-full" />
 
-  <div className="flex flex-1">
-    {/* LeftBar Component */}
-    <LeftBar className="w-1/4" />
+      <div className="flex flex-1">
+        {/* LeftBar Component */}
+        <LeftBar className="w-1/4" />
 
-    {/* NowPlayingCard Component */}
-    <NowPlayingCard className="w-1/2" />
+        {/* NowPlayingCard Component */}
+        <NowPlayingCard className="w-1/2" />
 
-    {/* LyricsCard Component */}
-    <LyricsCard className="w-1/4" />
-  </div>
-  {/* <CardList songs={songs} /> */}
-</div>
-
+        {/* LyricsCard Component */}
+        <LyricsCard className="w-1/4" />
+      </div>
+    </div>
   );
 };
 

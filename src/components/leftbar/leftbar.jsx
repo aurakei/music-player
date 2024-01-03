@@ -18,7 +18,7 @@ const LeftBar = () => {
   ];
 
   return (
-    <div className="w-1/5 bg-gray-200 p-4">
+    <div className="w-1/5 bg-gray-200 p-4 border border-gray-300 rounded-lg">
       <h2 className="text-lg font-bold mb-4">Song List</h2>
       <ul>
         {songs.map((song, index) => (
