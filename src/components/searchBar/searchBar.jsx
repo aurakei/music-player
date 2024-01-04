@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = async () => {
-    const axios = require("axios");
-
     const options = {
       method: "GET",
       url: "https://genius-song-lyrics1.p.rapidapi.com/search/",
       params: {
-        q: "<REQUIRED>",
+        q: query, // Use the current query value
         per_page: "10",
         page: "1",
       },
@@ -21,9 +20,9 @@ const SearchBar = ({ onSearch }) => {
     };
 
     try {
-      //make the API request using axios
-      const response = await axios.request(options);
-      console.log(response)
+      // Make the API request using axios.get
+      const response = await axios.get(options.url, { params: options.params, headers: options.headers });
+      console.log(response);
       console.log(response.data);
     } catch (error) {
       console.error(error);
