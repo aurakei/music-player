@@ -11,8 +11,11 @@ const TitleComponent = ({ title, onSearch }) => {
   };
 
   return (
-    <div className="flex justify-between items-start h-25">
-      <h1 className="text-4xl text-blue-500 mt-4">{title}</h1>
+    <div className="flex justify-between items-center h-25">
+      <div>
+        {/* Add margin or padding if needed */}
+        <h1 className="text-4xl text-blue-500 mt-4">{title}</h1>
+      </div>
       <SearchBar onSearch={handleSearch} />
     </div>
   );
