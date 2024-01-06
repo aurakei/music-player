@@ -1,3 +1,4 @@
+// SearchBar.jsx
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -9,7 +10,7 @@ const SearchBar = ({ onSearch }) => {
       method: "GET",
       url: "https://genius-song-lyrics1.p.rapidapi.com/search/",
       params: {
-        q: query, // Use the current query value
+        q: query,
         per_page: "10",
         page: "1",
       },
@@ -20,10 +21,12 @@ const SearchBar = ({ onSearch }) => {
     };
 
     try {
-      // Make the API request using axios.get
-      const response = await axios.get(options.url, { params: options.params, headers: options.headers });
-      console.log(response);
-      console.log(response.data);
+      const response = await axios.get(options.url, {
+        params: options.params,
+        headers: options.headers,
+      });
+      const searchResults = response.data.response.hits;
+      onSearch(searchResults); // Pass the search results to the parent component
     } catch (error) {
       console.error(error);
     }

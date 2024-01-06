@@ -1,3 +1,4 @@
+// LeftBar.jsx
 import React from 'react';
 
 const LeftBar = ({ songs }) => {
@@ -7,7 +8,7 @@ const LeftBar = ({ songs }) => {
       <ul>
         {songs?.map((song, index) => (
           <li key={index} className="mb-2">
-            {song?.result?.title} - {song?.result?.artist_names}
+            {song.title} - {song.primary_artist.name}
           </li>
         ))}
       </ul>
