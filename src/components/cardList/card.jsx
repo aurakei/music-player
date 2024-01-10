@@ -11,3 +11,4 @@ const Card = ({ title, artist, lyrics }) => {
 };
 
 export default Card;
+
