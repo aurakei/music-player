@@ -12,8 +12,7 @@ The Music Player App is a simple web application built with React that allows us
 
 ## Getting Started
 
-Follow these instructions to set up and run the Music Player App on your local machine.
-
+Step by step instructions:
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your machine.
