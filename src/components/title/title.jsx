@@ -1,18 +1,17 @@
-// TitleBar.js
-import React from 'react';
+// TitleComponent.jsx
+import React, { useState } from "react";
+import SearchBar from "../searchBar/searchBar";
 
-const TitleBar = ({ onSearch }) => {
+const TitleComponent = ({ title, onSearch }) => {
   return (
-    <div className="bg-gray-800 p-4 text-white">
-      <h1 className="text-2xl font-bold">Music Player</h1>
-      <input
-        type="text"
-        placeholder="Search..."
-        className="border p-2 rounded"
-        onChange={(e) => onSearch(e.target.value)}
-      />
+    <div className="flex justify-between items-center h-25">
+      <div>
+        <h1 className="text-4xl text-blue-500 mt-4">{title}</h1>
+      </div>
+      <SearchBar onSearch={onSearch} />
     </div>
   );
 };
 
-export default TitleBar;
+export default TitleComponent;
+
