@@ -40,3 +40,6 @@ const LyricsCard = () => {
 };
 
 export default LyricsCard;
+
+
+

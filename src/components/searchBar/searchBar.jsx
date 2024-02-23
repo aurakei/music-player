@@ -34,6 +34,7 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="ml-auto">
+
       <input
         type="text"
         placeholder="Search songs..."
