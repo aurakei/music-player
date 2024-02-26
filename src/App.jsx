@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import coverImg from './images/coverImg.webp';
+import coverImg from "./images/coverImg.webp";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
           className="w-full h-64 object-cover"
           style={{
             backgroundImage: `url(${coverImg})`,
-            backgroundSize: 'cover',
+            backgroundSize: "cover",
           }}
         />
         <div className="p-6">
@@ -18,8 +19,8 @@ const App = () => {
             Discover more with Musician
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Musician lets you listen offline, ad-free, with over 320
-            million tracks — and growing.
+            Musician lets you listen offline, ad-free, with over 320 million
+            tracks — and growing.
           </p>
           <div className="mt-4 flex justify-center">
             <button className="mr-4 py-2 px-6 bg-gray-800 text-white rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">
@@ -32,9 +33,12 @@ const App = () => {
         </div>
       </div>
       <div className="flex items-center mt-8">
-        <a href="#" className="text-sm text-gray-700 mr-4 hover:underline">
+        <Link
+          to="./pages/SignIn.jsx"
+          className="text-sm text-gray-700 mr-4 hover:underline"
+        >
           Sign in
-        </a>
+        </Link>
         <a
           href="#"
           className="text-sm text-white bg-orange-600 py-2 px-4 rounded-lg hover:bg-orange-500"
