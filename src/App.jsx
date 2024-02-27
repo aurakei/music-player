@@ -39,15 +39,17 @@ const App = () => {
         >
           Sign in
         </Link>
-        <a
-          href="#"
+        <Link
+          to="./pages/CreateAccount.jsx"
           className="text-sm text-white bg-orange-600 py-2 px-4 rounded-lg hover:bg-orange-500"
         >
           Create account
-        </a>
+        </Link>
         <p className="ml-4 text-sm text-gray-700">For Artists</p>
       </div>
+      
     </div>
+
   );
 };
 
