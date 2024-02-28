@@ -1,7 +1,7 @@
 // ArtistCard.jsx
 import React from 'react';
 
-const cardList = ({ imageSrc, artistName, songName }) => {
+const ArtistCard = ({ imageSrc, artistName, songName }) => {
   return (
     <div className="flex flex-col items-center w-40 m-4">
       <div className="w-40 h-40 bg-gradient-to-br from-red-400 to-stone-500 flex justify-center items-center">
@@ -19,4 +19,4 @@ const cardList = ({ imageSrc, artistName, songName }) => {
   );
 };
 
-export default cardList;
+export default ArtistCard;
