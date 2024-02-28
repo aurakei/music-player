@@ -1,10 +1,10 @@
 // Homepage.jsx
 import React, { useState } from 'react';
-import TitleComponent from './components/title/title';
-import LeftBar from './components/leftbar/leftbar';
-import NowPlayingCard from './components/cardList/nowPlayingCard';
-import LyricsCard from './components/cardList/lyrics';
-import backgroundImage from './images/wallbackground.jpg';
+import TitleComponent from '../components/title/title';
+import LeftBar from '../components/leftbar/leftbar';
+import NowPlayingCard from '../components/cardList/nowPlayingCard';
+import LyricsCard from '../components/cardList/lyrics';
+import backgroundImage from '../images/wallbackground.jpg';
 
 const Homepage = () => {
   const [searchResults, setSearchResults] = useState([]);

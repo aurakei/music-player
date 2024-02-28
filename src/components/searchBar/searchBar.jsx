@@ -34,11 +34,10 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="ml-auto">
-
       <input
         type="text"
-        placeholder="Search songs..."
-        className="border border-gray-300 p-2 rounded"
+        placeholder="Search for artists, bands, tracks, podcasts..."
+        className="border border-gray-300 p-2 rounded text-sm full"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
