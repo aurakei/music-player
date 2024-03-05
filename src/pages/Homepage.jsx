@@ -72,7 +72,7 @@ const Homepage = () => {
 
       <div className="flex flex-1">
         <div className="w-full h-8 text-center text-zinc-800 text-xs font-thin font-['Inter'] leading-loose">
-          Hear what’s trending for free in the SoundCloud community
+          Hear what’s trending for free in the Musician community
         </div>
       </div>
 
@@ -89,15 +89,15 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="w-64 h-11 px-6 py-3.5 bg-orange-600 rounded-sm border border-orange-600 justify-center items-center inline-flex">
-        <div className="w-52 h-4 text-center text-white text-lg font-thin font-['Inter'] leading-none">
+      <div className="flex justify-end mt-4 mr-4">
+        <button className="w-auto px-4 py-2.5 bg-orange-600 rounded-sm border border-orange-600 text-white text-lg font-thin font-['Inter'] leading-none">
           Explore trending playlists
-        </div>
+        </button>
       </div>
 
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center h-screen mt-4 mb-4">
         <div className="w-100 h-96 px-16 bg-zinc-100 justify-center items-start gap-11 inline-flex">
-          <img className="w-96 h-96" src={CoverImg4} alt="Placeholder Image" />
+          <img className="w-96 h-96" src={CoverImg4} alt="Placeholder Image3" />
           <div className="w-80 h-96 relative flex-col justify-start items-start flex">
             <div className="pr-36 flex-col justify-center items-start gap-4 inline-flex">
               <div className="w-48 h-20 text-zinc-800 text-4xl font-thin font-['Inter'] leading-10">
@@ -109,7 +109,7 @@ const Homepage = () => {
             </div>
             <div className="h-24 pr-2 justify-start items-center inline-flex">
               <div className="w-80 h-24 text-zinc-800 text-base font-thin font-['Inter'] leading-loose">
-                Muscician is available on
+                Musician is available on
                 <br />
                 Web, iOS, Android, Sonos,
                 <br />
@@ -120,12 +120,12 @@ const Homepage = () => {
               <img
                 className="w-28 h-10"
                 src="https://via.placeholder.com/120x40"
-                alt="Placeholder Image"
+                alt="Placeholder Image1"
               />
               <img
                 className="w-32 h-10"
                 src="https://via.placeholder.com/135x40"
-                alt="Placeholder Image"
+                alt="Placeholder Image2"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ const Homepage = () => {
           Calling all creators
         </div>
         <div className="w-full text-center text-zinc-200 text-base font-thin font-['Inter'] leading-loose">
-          Get on SoundCloud to connect with fans, share your sounds, and grow
+          Get on Musician to connect with fans, share your sounds, and grow
           your audience. What are you waiting for?
         </div>
         <div className="w-full flex justify-center">
