@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import { FaSearch } from "react-icons/fa";
+
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
@@ -34,12 +36,13 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="ml-auto">
+      
       <input
         type="text"
         placeholder="Search for artists, bands, tracks, podcasts..."
         className="border border-gray-300 p-2 rounded text-sm full"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => setQuery(e.target.value)} 
       />
       <button
         onClick={handleSearch}
