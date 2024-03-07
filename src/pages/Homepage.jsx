@@ -76,6 +76,19 @@ const Homepage = () => {
         </div>
       </div>
 
+      {searchResults.length > 0 && (
+        <div className="flex justify-center mb-4">
+          {searchResults.map((result) => (
+            <ArtistCard
+              key={result.id}
+              imageSrc={result.imageSrc}
+              artistName={result.artistName}
+              songName={result.songName}
+            />
+          ))}
+        </div>
+      )}
+
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-wrap justify-center">
           {artists.map((artist) => (
@@ -137,8 +150,8 @@ const Homepage = () => {
           Calling all creators
         </div>
         <div className="w-full text-center text-zinc-200 text-base font-thin font-['Inter'] leading-loose">
-          Get on Musician to connect with fans, share your sounds, and grow
-          your audience. What are you waiting for?
+          Get on Musician to connect with fans, share your sounds, and grow your
+          audience. What are you waiting for?
         </div>
         <div className="w-full flex justify-center">
           <button className="w-40 h-11 px-6 py-3.5 rounded-sm bg-gradient-to-r from-fuchsia-800 via-orange-600 to-orange-600 text-white text-lg font-thin font-['Inter'] leading-none">

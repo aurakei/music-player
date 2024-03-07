@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch }) => {
       method: "GET",
       url: "https://genius-song-lyrics1.p.rapidapi.com/search/",
       params: {
-        q: query,
+        q: "rita",
         per_page: "10",
         page: "1",
       },
@@ -23,12 +23,8 @@ const SearchBar = ({ onSearch }) => {
     };
 
     try {
-      const response = await axios.get(options.url, {
-        params: options.params,
-        headers: options.headers,
-      });
-      const searchResults = response.data.response.hits;
-      onSearch(searchResults); // Pass the search results to the parent component
+      const response = await axios.request(options);
+      console.log(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -36,13 +32,12 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="ml-auto">
-      
       <input
         type="text"
         placeholder="Search for artists, bands, tracks, podcasts..."
         className="border border-gray-300 p-2 rounded text-sm full"
         value={query}
-        onChange={(e) => setQuery(e.target.value)} 
+        onChange={(e) => setQuery(e.target.value)}
       />
       <button
         onClick={handleSearch}
