@@ -36,7 +36,8 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div className="ml-auto">
+    <div className="ml-auto flex items-center">
+      <FaSearch className="text-gray-500"/>
       <input
         type="text"
         placeholder="Search for artists, bands, tracks, podcasts..."
