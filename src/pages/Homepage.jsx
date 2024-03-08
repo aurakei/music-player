@@ -1,5 +1,7 @@
 // Homepage.jsx
 import React, { useState } from "react";
+
+import { genres } from "../assets/constants.jsx";
 import TitleComponent from "../components/title/title.jsx";
 import ArtistCard from "../components/cardList/ArtistCard.jsx";
 import CoverImg1 from "../images/coverImg1.jpeg";
@@ -16,6 +18,7 @@ const Homepage = () => {
     setSearchResults(results);
   };
 
+  const genreTitle = "Pop";
   const artists = [
     {
       id: 1,
@@ -72,7 +75,18 @@ const Homepage = () => {
 
       <div className="flex flex-1">
         <div className="w-full h-8 text-center text-zinc-800 text-xs font-thin font-['Inter'] leading-loose">
-          Hear what’s trending for free in the Musician community
+          Hear what’s trending for free in the Musician community {genreTitle}
+          <select
+            onChange={() => {}}
+            value=""
+            className="bg-white-300 text-black p-2 text-sm rounded-lg outline-none sm:mt-0 mt-5"
+          >
+            {genres.map((genre) => (
+              <option key={genre.value} value={genre.value}>
+                {genre.title}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
