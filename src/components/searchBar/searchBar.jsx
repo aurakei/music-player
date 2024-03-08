@@ -24,8 +24,9 @@ const SearchBar = ({ onSearch }) => {
 
     try {
       const response = await axios.request(options);
+            // console.log(response.data.results);
       if (response.data) {
-        console.log(response.data);;
+        console.log(response.data);
       } else {
         console.log("Result data is undefined or null.");
       }
