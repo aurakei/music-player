@@ -3,7 +3,7 @@ Certainly! Below is a sample README file for the music player app built with Rea
 ```markdown
 # Music Player App
 
-A simple music player app built with React and styled using Tailwind CSS.
+A simple music player app built with React and styled using Tailwind CSS.  The user can add songs to the playlist. Target is to add the functionality where the user can add their lyrics and request for beats from the app according to the genre of the song.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -21,10 +21,19 @@ This project is a basic music player app created with React. It features a title
 
 ## Features
 
-- Title bar with search functionality.
-- Left component for managing the music library or viewing recent played songs.
-- Now playing component to display the currently playing song.
-- Right component for displaying lyrics of the currently playing song.
+- Add songs to the playlist
+- Play, pause, skip, and control playback of songs
+- View song details such as title, artist, and release date
+- Search for artists, bands, tracks, and podcasts
+- Customize the app with a dark mode option
+
+## Future Development:
+In future updates, we plan to enhance the app with the following features:
+
+* Lyrics Integration: Users will be able to add their own lyrics for the songs in their playlist.
+* Beat Requests: Users can request beats from the app based on the genre of the song they're listening to. This feature will provide a curated selection of beats to complement the user's music preferences.
+
+Stay tuned for exciting updates as we continue to improve the app and add new functionalities!
 
 ## Installation
 
