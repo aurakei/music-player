@@ -21,11 +21,11 @@ This project is a basic music player app created with React. It features a title
 
 ## Features
 
-- Add songs to the playlist
-- Play, pause, skip, and control playback of songs
-- View song details such as title, artist, and release date
-- Search for artists, bands, tracks, and podcasts
-- Customize the app with a dark mode option
+- Add songs to the playlist.
+- Play, pause, skip, and control playback of songs.
+- View song details such as title, artist, and release date.
+- Search for artists, bands, tracks, and podcasts.
+- Customize the app with a dark mode option.
 
 ## Future Development:
 In future updates, we plan to enhance the app with the following features:
