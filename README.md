@@ -1,4 +1,4 @@
-Certainly! Below is a sample README file for the music player app built with React and Tailwind CSS. You can use this as a template and modify it according to your specific project details and requirements.
+Below is a sample README file for the music player app built with React and Tailwind CSS. You can use this as a template and modify it according to your specific project details and requirements.
 
 ```markdown
 # Music Player App
